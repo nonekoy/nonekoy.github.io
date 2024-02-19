@@ -1,7 +1,7 @@
 body{
     background-color: yellow;
     background-image: linear-gradient(165deg, rgba(255, 166, 0, 0.613),rgba(255, 255, 0, 0.898), orange, rgba(255, 166, 0, 0.619),black, black);
-    height: 100vh;
+    height: 98dvh;
 }
 
 .nav-container{
@@ -15,12 +15,12 @@ body{
     top: 0;
     left: 0;
     background: #00192d;
-    font-size: 1.04167vw;
+    font-size: 2.04167vw;
     color: #777f85
 }
 .nav-container a{
     align-items: center;
-    height: 2.86458vw;
+    height: 2.46458vw;
     text-decoration: none;
     border-radius: 5px;
     padding-inline-start: 40px;
@@ -73,6 +73,27 @@ body{
     font-size: 1.75em;
     transition: opacity 350ms;
 }
+.cell_title a{
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-break: break-word;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.75em;
+    transition: opacity 350ms;
+}
+
 .cell_title >small{
     font-weight: 300;
     margin-top: 0.25em;
@@ -95,18 +116,18 @@ body{
     z-index: -1;
 }
 .honeycomb-cell::before{
-    background: #fff;
+    background: #000000;
     transform: scale(1.055);
 }
 .honeycomb-cell::after{
-    background: #111111;
+    background: #cfb108;
     opacity: 0.7;
     transition: opacity 350ms;
     -webkit-transition: opacity 350ms;
 }
 .honeycomb-cell:hover
 .cell_title{
-    opacity: 0;
+    opacity: 0.3;
 }
 .honeycomb-cell:hover
 .honeycomb-cell-img{
